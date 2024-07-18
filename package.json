@@ -1,0 +1,16 @@
+{
+  "name": "api-users",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch --env-file .env.dev standalone"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "knex": "^3.1.0",
+    "mysql2": "^3.10.2"
+  }
+}

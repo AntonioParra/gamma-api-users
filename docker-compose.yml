@@ -1,0 +1,8 @@
+name: api-users
+
+services:
+  db-users:
+    container_name: db-users
+    image: mariadb
+    restart: always
+    env_file: ".env"
