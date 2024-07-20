@@ -1,10 +1,16 @@
-name: api-users
+name: gamma-api-users
 
 services:
   db-users:
-    container_name: db-users
+    container_name: gamma-db-users
     image: mariadb
     restart: always
     env_file: ".env.dev"
     ports: 
       - "33060:3306"
+    networks:
+      - gamma-network
+
+networks:
+  gamma-network:
+    external: true
